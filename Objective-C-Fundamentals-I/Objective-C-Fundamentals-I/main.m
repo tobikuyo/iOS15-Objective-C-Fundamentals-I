@@ -26,6 +26,7 @@ int main(int argc, const char * argv[]) {
 
         // Call properties with the "dot syntax" or "method syntax"
         [basics explorePrimitives];
+        [basics exploreObjects];
     }
     return 0;
 }

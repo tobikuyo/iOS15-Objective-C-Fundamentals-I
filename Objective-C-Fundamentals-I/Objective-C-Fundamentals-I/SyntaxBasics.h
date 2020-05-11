@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 // Methods
 
 - (void)explorePrimitives;
+- (void)exploreObjects;
+- (void)exploreCollectionsWithArray:(NSArray *)shipCaptains;
+- (void)exploreNumbers;
 
 @end
 
