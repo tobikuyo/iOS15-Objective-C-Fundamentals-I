@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithLargeNumber: (NSNumber *)largeNumber smallNumber: (int)smallNumber;
 
+// Methods
+
+- (void)explorePrimitives;
+
 @end
 
 NS_ASSUME_NONNULL_END

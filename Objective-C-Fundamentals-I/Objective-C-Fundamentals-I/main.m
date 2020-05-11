@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SyntaxBasics.h"
 
 // File Naming
 // .h = header file
@@ -15,6 +16,16 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hey Tobi!");
+
+        SyntaxBasics * basics = [[SyntaxBasics alloc] initWithLargeNumber: @98374837468347 smallNumber: 27];
+
+        // Use Tokens for string interpolation
+        // %@ = object
+        // %d or %i
+        NSLog(@"largeNumber %@ smallNumber: %d", basics.largeNumber, basics.smallNumber);
+
+        // Call properties with the "dot syntax" or "method syntax"
+        [basics explorePrimitives];
     }
     return 0;
 }
