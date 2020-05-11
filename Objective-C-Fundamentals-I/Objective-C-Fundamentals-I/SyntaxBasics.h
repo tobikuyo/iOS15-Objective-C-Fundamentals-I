@@ -14,8 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Pointer: variable that stores a memory address
 
-@property NSNumber * largeNumber;
+@property NSNumber * largeNumber; // Class or Object (pointer = star)
 @property int smallNumber; // primitive data type (no star)
+
+// Initializer
+
+// -/+ = instance method / class method
+// - (returnType)initName:(ParameterType1)parameterName1 anotherLabel:(ParameterType2)parameterName2
+
+- (instancetype)initWithLargeNumber: (NSNumber *)largeNumber smallNumber: (int)smallNumber;
 
 @end
 

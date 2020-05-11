@@ -10,4 +10,15 @@
 
 @implementation SyntaxBasics
 
+// All the logic goes inside the @implementation for the objc class
+- (instancetype)initWithLargeNumber: (NSNumber *)largeNumber smallNumber: (int)smallNumber {
+    self = [super init];
+    if (self != nil) {
+        _largeNumber = largeNumber;
+        _smallNumber = smallNumber;
+    }
+
+    return self;
+}
+
 @end
